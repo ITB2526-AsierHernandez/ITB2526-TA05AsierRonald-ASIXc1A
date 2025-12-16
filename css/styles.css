@@ -2,6 +2,9 @@
 body {
     background-color: white;
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header Styles */
@@ -77,14 +80,23 @@ nav a:hover {
 
 /* Main section styles */
 .main-section {
-    margin-top: 100px; /* Allow space for the fixed header */
+    margin-top: 100px;
     padding: 20px;
-    color: #fff;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    gap: 40px;
+    align-items: stretch;
 }
 
 .main-section h1 {
+    margin-top: 20px;
     font-size: 36px;
     font-weight: bold;
+    color: blue;
+}
+
+.main-section p {
     color: black;
 }
 
@@ -94,40 +106,181 @@ main section img {
     border-radius: 50%;
 }
 
-article {
-    margin-top: 40px;
-}
-
-article h1 {
-    font-size: 24px;
-    color: #fff;
-}
-
-article p {
-    font-size: 16px;
-    color: #bbb;
-}
-
 button {
-    background-color: #0047AB;
+    background-color: blue;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 30px;
     font-size: 16px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    margin-top: auto;
+
+
 }
 
 button:hover {
-    background-color: #003f8f;
+    background-color: #4d6cff;
+    transform: translateY(-5px)
 }
 
-/* Footer Styles */
 footer {
     text-align: center;
     padding: 20px;
     background-color: rgb(56, 56, 138);
     color: #fff;
     font-size: 14px;
-    margin-top: 40px;
+    margin-top: auto;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile h1 {
+    font-size: 30px;
+}
+
+.profile p {
+    line-height: 1.6;
+}
+
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 18px;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.project aside {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.project aside img {
+    width: 220px;
+    padding-right: 50px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#h1_form{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    margin-top: 100px;
+    font-size: 70px;
+    color: blue;
+    font-weight: bold;
+}
+
+/* ==============================
+   Formulario Contact Me
+   ============================== */
+
+#main_form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 50px 20px;
+    background-image: url(../images/server_backgroud.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#form_article {
+    background-color: #f5f5f5;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+#h1_form {
+    font-size: 36px;
+    color: #1E3A8A; /* azul oscuro */
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+}
+
+input[type="email"],
+textarea {
+    margin-top: 8px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #1E3A8A;
+    box-shadow: 0 0 10px rgba(30, 58, 138, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+    max-height: 250px;
+}
+
+button[type="submit"] {
+    background-color: #1E3A8A;
+    color: white;
+    font-size: 18px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+button[type="submit"]:hover {
+    background-color: #3b4fc1;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
