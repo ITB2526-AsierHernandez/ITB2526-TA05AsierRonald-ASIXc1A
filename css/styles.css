@@ -295,3 +295,121 @@ button[type="submit"]:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
+
+/* ===== PROJECTS CAROUSEL (IMPROVED) ===== */
+
+.projects-main {
+    margin-top: 160px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: blue;
+    border-radius: 18px;
+    background-color: white;
+    margin-bottom: 80px;
+}
+
+/* Carousel container */
+.carousel {
+    position: relative;
+    width: 900px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Project card */
+.project-card {
+    width: 100%;
+    background: linear-gradient(135deg, #ffffff, #f0f4ff);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* Image */
+.project-card img {
+    width: 50%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-bottom: 35px;
+}
+
+/* Text */
+.project-card h2 {
+    font-size: 40px;
+    color: #1E3A8A;
+    margin-bottom: 20px;
+}
+
+.project-card p {
+    font-size: 20px;
+    color: #334155;
+    line-height: 1.7;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgba(30, 58, 138, 0.25);
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+    line-height: 1;
+
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: rgba(30, 58, 138, 0.4);
+    transform: translateY(-50%) scale(1.15);
+}
+
+#prevBtn {
+    left: -120px;
+}
+
+#nextBtn {
+    right: -120px;
+}
+
+.project-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 40px;
+    background-color: #1E3A8A;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+    background-color: #3b4fc1;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}

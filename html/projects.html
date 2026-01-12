@@ -20,32 +20,27 @@
                 <li><a href="../index.html">Main Page</a></li>
                 <li><a href="./contact.html">Contact</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="./project1.html">Project 1</a></li>
-                <li><a href="./project2.html">Project 2</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <article>
-            <h1></h1>
-            <section>
-                <h1></h1>
-                <img src="" alt="">
-            </section>
-            <section>
-                <h1></h1>
-                <img src="" alt="">
-            </section>
-            <section>
-                <h1></h1>
-                <img src="" alt="">
-            </section>
-            <section>
-                <h1></h1>
-                <img src="" alt="">
-            </section>
-        </article>
+    <main class="projects-main">
+        <h1 class="projects-title">My Featured Projects</h1>
+
+        <div class="carousel">
+            <button id="prevBtn" class="arrow">&#10094;</button>
+
+            <div class="project-card">
+                <img id="project-img" src="" alt="Project image">
+                <h2 id="project-title"></h2>
+                <p id="project-desc"></p>
+                <a id="project-link" href="#" class="project-btn">View project</a>
+            </div>
+
+            <button id="nextBtn" class="arrow">&#10095;</button>
+        </div>
     </main>
+
+    <script src="../js/javascript.js"></script>
     <footer>
         <p>&copy; 2025 Name and surname. Tots els drets reservats.</p>
 
