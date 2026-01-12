@@ -1,13 +1,25 @@
 /* General body styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: white;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    width: 100%;
+    background-image: url(../images/upscalemedia-transformed.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-/* Header Styles */
 .header {
     position: fixed;
     top: 0;
@@ -141,6 +153,9 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: white;
+    border-radius: 18px;
+    padding: 20px;
 }
 
 .profile h1 {
@@ -149,6 +164,8 @@ footer {
 
 .profile p {
     line-height: 1.6;
+    color: blue;
+    font-weight: bold;
 }
 
 
@@ -182,7 +199,7 @@ footer {
     border-radius: 8px;
 }
 
-#h1_form{
+#h1_form {
     justify-content: center;
     display: flex;
     align-items: center;
@@ -193,9 +210,6 @@ footer {
     font-weight: bold;
 }
 
-/* ==============================
-   Formulario Contact Me
-   ============================== */
 
 #main_form {
     flex: 1;
@@ -203,10 +217,6 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 100px 20px 50px 20px;
-    background-image: url(../images/server_backgroud.webp);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 #form_article {
@@ -221,7 +231,8 @@ footer {
 
 #h1_form {
     font-size: 36px;
-    color: #1E3A8A; /* azul oscuro */
+    color: #1E3A8A;
+    /* azul oscuro */
     margin-bottom: 30px;
     font-weight: 700;
 }
