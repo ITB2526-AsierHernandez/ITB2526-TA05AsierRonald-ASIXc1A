@@ -11,13 +11,13 @@ const projects = [
         title: "ToDo App",
         description: "Task manager with dynamic task creation and deletion.",
         image: "../images/todoap.png",
-        link: "./project1.html"
+        link: "./project2.html"
     },
     {
         title: "Weather App",
         description: "Weather application using JavaScript and APIs.",
         image: "../images/wheatherap.png",
-        link: "./project1.html"
+        link: "./project3.html"
     },
     {
         title: "Recipe Finder",

@@ -54,7 +54,14 @@ body {
     margin: 0px 35px 0px 0px;
 }
 
-/* Navigation bar styles */
+a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    
+}
+
 nav {
     display: flex;
     justify-content: left;
@@ -310,6 +317,7 @@ button[type="submit"]:hover {
     font-size: 64px;
     font-weight: 700;
     color: blue;
+    padding: 20px;
     border-radius: 18px;
     background-color: white;
     margin-bottom: 80px;
@@ -349,7 +357,7 @@ button[type="submit"]:hover {
 /* Text */
 .project-card h2 {
     font-size: 40px;
-    color: #1E3A8A;
+    color: blue;
     margin-bottom: 20px;
 }
 
@@ -399,7 +407,7 @@ button[type="submit"]:hover {
     display: inline-block;
     margin-top: 30px;
     padding: 14px 40px;
-    background-color: #1E3A8A;
+    background-color: blue;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -408,8 +416,56 @@ button[type="submit"]:hover {
     transition: all 0.3s ease;
 }
 
-.project-btn:hover {
-    background-color: #3b4fc1;
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+.main_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.main_destacats {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+
+    max-width: 1200px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Título centrado */
+.titol_projecte_destacat {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    color: blue;
+}
+
+.article_projecte_destacat {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.article_projecte_destacat img {
+    width: 40%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+.project_text {
+    width: 60%;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: black;
 }
